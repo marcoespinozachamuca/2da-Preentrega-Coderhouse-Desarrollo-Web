@@ -1,0 +1,865 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #1F1F1F;
+    margin: 0;
+    padding: 0;
+    background-color: #D1D8E0;
+}
+
+/* Header */
+header {
+    background-color: #2E2E2E;
+    padding: 10px 0;
+    color: #F0D700;
+    box-sizing: border-box;
+}
+
+/* Menú de Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #BB86FC;
+}
+
+/* Footer */
+footer {
+    background-color: #2E2E2E;
+    color: #EAEAEA;
+    padding: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    margin: 0;
+}
+
+footer ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #BB86FC;
+}
+
+/* Estilos para el contenido principal */
+.index-page .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.index-page .text-content {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.index-page figure {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.index-page figure img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.index-page blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #BB86FC;
+    box-sizing: border-box;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .index-page .section-content {
+        grid-template-columns: 1fr; /* Ajusta a una columna en dispositivos móviles */
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .text-content {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .index-page figure {
+        margin-top: 10px;
+        padding: 5px;
+    }
+}
+
+/* Media Queries para pantallas de escritorio */
+@media (min-width: 769px) {
+    .index-page .section-content {
+        grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas grandes */
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+
+/* Estilos específicos para index.html */
+/* Ajustes Box Model para index.html */
+.index-page .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Ajusta el cálculo del tamaño incluyendo padding y border */
+}
+
+.index-page .text-content {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.index-page figure {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.index-page figure img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.index-page blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #BB86FC;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #1F1F1F;
+    margin: 0;
+    padding: 0;
+    background-color: #D1D8E0;
+    box-sizing: border-box; /* Asegura que todas las dimensiones incluyan padding y border */
+}
+
+/* Header */
+header {
+    background-color: #2E2E2E;
+    padding: 10px 0;
+    color: #F0D700;
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    background-color: #2E2E2E;
+    color: #EAEAEA;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+footer ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.index-page .section-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+
+.index-page .text-content {
+    grid-column: 1;
+}
+
+.index-page figure {
+    grid-column: 2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.index-page figure img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Estilo para blockquote específico de index.html */
+.index-page blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #BB86FC;
+    color: #333;
+}
+
+/* Estilos específicos para discografia.html */
+/* Ajustes Box Model para discografia.html */
+.discografia-page .album {
+    padding: 15px;
+    margin: 10px; 
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+/* Estilos generales para discografia.html */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #1F1F1F;
+    margin: 0;
+    padding: 0;
+    background-color: #D1D8E0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #2E2E2E;
+    padding: 10px 0;
+    color: #F0D700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #BB86FC;
+}
+
+/* Main Content */
+.discografia-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Diseño de grilla para los álbumes */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas para mostrar todos los álbumes en una sola fila */
+    gap: 20px;
+}
+
+/* Estilos para los álbumes */
+.album {
+    background-color: #F8F9FA;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos de las imágenes dentro de los álbumes */
+.album img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E2E2E;
+    color: #EAEAEA;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* Media Queries para pantallas móviles */
+@media (max-width: 768px) {
+    .discografia-page {
+        padding: 10px;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .album {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+/* Media Queries para pantallas de escritorio */
+@media (min-width: 769px) {
+    .discografia-page {
+        padding: 20px;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas de escritorio */
+    }
+}
+
+/* Estilos específicos para contacto.html */
+/* Ajustes Box Model para contacto.html */
+.contacto-page form {
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para contacto.html */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #1F1F1F;
+    margin: 0;
+    padding: 0;
+    background-color: #D1D8E0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #2E2E2E;
+    padding: 5px 0;
+    color: #F0D700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #BB86FC;
+}
+
+/* Ajustes Box Model para contacto.html */
+.contacto-page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Formulario de contacto */
+.contacto-page form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F8F9FA;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Inputs y textarea */
+.contacto-page input,
+.contacto-page textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Botón de envío */
+.contacto-page button {
+    padding: 10px;
+    background-color: #2E2E2E;
+    color: #F0D700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.contacto-page button:hover {
+    background-color: #BB86FC;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .contacto-page {
+        padding: 10px;
+    }
+
+    .contacto-page form {
+        padding: 15px;
+        max-width: 90%; /* El formulario ocupa casi todo el ancho en móviles */
+        gap: 8px;
+    }
+
+    .contacto-page input,
+    .contacto-page textarea {
+        padding: 8px;
+    }
+
+    .contacto-page button {
+        padding: 8px;
+    }
+}
+
+/* Media Queries para pantallas de escritorio */
+@media (min-width: 769px) {
+    .contacto-page form {
+        grid-template-columns: 1fr 1fr; /* Dos columnas para un diseño más estructurado */
+        gap: 20px;
+    }
+
+    .contacto-page input,
+    .contacto-page textarea {
+        grid-column: span 2; /* Ajusta los inputs para ocupar dos columnas si es necesario */
+    }
+
+    .contacto-page button {
+        align-self: start; /* Botón alineado al inicio */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #2E2E2E;
+    color: #EAEAEA;
+    padding: 8px;
+    text-align: center;
+    margin-top: auto;
+    box-sizing: border-box;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+footer ul li {
+    margin: 0;
+}
+
+footer ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #BB86FC;
+}
+
+
+/* Estilos específicos para galeria.html */
+/* Ajustes Box Model para galeria.html */
+.galeria-page .galeria-container {
+    padding: 15px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+/* Estilos generales para galeria.html */
+.galeria-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Diseño de grilla para las imágenes y videos */
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas para acomodar los elementos en una fila */
+    gap: 20px;
+}
+
+/* Estilos para los elementos de la galería */
+.galeria-item {
+    background-color: #F8F9FA;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de las imágenes y videos */
+.galeria-item img,
+.galeria-item iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2E2E2E;
+    color: #EAEAEA;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Media Queries para pantallas móviles */
+@media (max-width: 768px) {
+    .galeria-page {
+        padding: 10px;
+    }
+
+    .galeria-container {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+    }
+
+    .galeria-item {
+        padding: 8px;
+        margin: 10px 0;
+    }
+}
+
+/* Media Queries para pantallas de escritorio */
+@media (min-width: 769px) {
+    .galeria-page {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .galeria-container {
+        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas de escritorio */
+    }
+}
+
+
+
+/* Estilos específicos para historia.html */
+/* Ajustes Box Model para historia.html */
+.historia-page section {
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+/* Estilos generales para historia.html */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #1F1F1F;
+    margin: 0;
+    padding: 0;
+    background-color: #D1D8E0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #2E2E2E;
+    padding: 5px 0;
+    color: #F0D700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #BB86FC;
+}
+
+/* Main Content */
+.historia-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Sección de historia */
+#historia {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Reduce el espacio entre los elementos */
+    margin-top: -10px; /* Ajusta todo hacia arriba */
+}
+
+/* Estilos para los encabezados y párrafos */
+.historia-page h1 {
+    color: #343434;
+    margin-top: 0; /* Elimina margen superior */
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.historia-page h2 {
+    color: #343434;
+    margin-top: 0; /* Elimina margen superior para acercar al contenido */
+    margin-bottom: 5px;
+}
+
+.historia-page h3 {
+    color: #343434;
+    margin-top: 0; /* Reduce el margen superior para compactar */
+    margin-bottom: 2px;
+}
+
+.historia-page p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para el contenedor de imágenes */
+.imagenes-horizontales {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.soda-stereo-img {
+    max-width: 45%;
+    text-align: center;
+}
+
+.soda-stereo-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.soda-stereo-img figcaption {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #2E2E2E;
+    color: #EAEAEA;
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+/* Estilos para los enlaces del footer */
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+footer ul li {
+    margin: 0;
+}
+
+footer ul li a {
+    color: #F0D700;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #BB86FC;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .historia-page {
+        padding: 10px;
+    }
+
+    .imagenes-horizontales {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .soda-stereo-img {
+        max-width: 100%;
+    }
+
+    .historia-page h1 {
+        font-size: 1.6em;
+    }
+
+    .historia-page h2 {
+        font-size: 1.4em;
+    }
+
+    .historia-page h3 {
+        font-size: 1.2em;
+    }
+
+    .historia-page p {
+        font-size: 1em;
+    }
+}
+
+/* Media Queries para pantallas de escritorio */
+@media (min-width: 769px) {
+    .historia-page {
+        padding: 10px;
+    }
+
+    .imagenes-horizontales {
+        flex-direction: row;
+    }
+}
